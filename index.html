@@ -10,17 +10,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
+            height: 100vh; /* Set height to 100% of the viewport */
+            background-color: black;
             font-family: Arial, sans-serif;
             flex-direction: column;
+            margin: 0; /* Remove default margin */
         }
 
         .progress-container {
             position: relative;
             width: 80%;
-            height: 30px;
-            background-color: #ddd;
+            height: 50px;
+            background-color: plum;
             border-radius: 15px;
             margin-bottom: 20px;
         }
@@ -29,7 +30,7 @@
             position: absolute;
             height: 100%;
             width: 0;
-            background-color: #4caf50;
+            background-color: deeppink;
             border-radius: 15px;
             transition: width 0.5s;
         }
@@ -41,7 +42,7 @@
             width: 25%;
             text-align: center;
             font-weight: bold;
-            color: white;
+    
         }
 
         #stage-1 { left: 0; }
@@ -79,9 +80,9 @@
                     
                     $(".progress-stage").each(function(index) {
                         if (index < currentStage) {
-                            $(this).css("background-color", "#4caf50");
+                            $(this).css("background-color", "lightpink");
                         } else {
-                            $(this).css("background-color", "#ddd");
+                            $(this).css("background-color", "aquamarine");
                         }
                     });
                 }
